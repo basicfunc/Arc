@@ -211,7 +211,7 @@ private:
  * @param arc The Arc instance.
  * @return Mutable pointer to the data.
  */
-template <typename U> auto get_mut(Arc<U> &arc) {
+template <typename U> U *get_mut(Arc<U> &arc) {
   std::lock_guard<std::shared_mutex> lock(*arc.mutex());
   return arc.get();
 }

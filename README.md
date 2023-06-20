@@ -1,4 +1,5 @@
 # ARC Smart Pointer
+![Build Status](https://github.com/basicfunc/Arc/actions/workflows/cmake.yml/badge.svg)
 
 This is an implementation of the ARC (Atomic Reference Counting) smart pointer in C++. The ARC smart pointer provides shared ownership of an object using reference counting. It allows multiple pointers to refer to the same object, and the object is deleted only when the last smart pointer referencing it goes out of scope.
 
